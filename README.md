@@ -1,6 +1,8 @@
 # Отчет по учебной практике  
 **Тема:** Разработка программного модуля автоматизации учета клиентов малого бизнеса
+
 **Выполнила:** Талпы Арина Николаевна ИСП-32
+
 **Учитель:** Базяк Галина Владимировна
 
 ---
@@ -90,25 +92,29 @@ client-management-system/
 │   ├── services/
 │   │   ├── __init__.py
 │   │   ├── client_service.py
-│   │   ├── order_service.py
+│   │   ├── orders_service.py
 │   │   ├── import_service.py
-│   │   └── report_service.py
+│   │   └── export_service.py
+|   |   |__ metabase_service.py
 │   ├── database/
 │   │   ├── __init__.py
 │   │   └── connection.py
 │   ├── utils/
 │   │   ├── __init__.py
-│   │   └── validators.py
-│   └── main.py
+│   │   └── utils_validators.py
+|   |   |__ order_validators.py
+│   └── main1.py
 ├── tests/
 │   ├── __init__.py
 │   ├── test_clients.py
-│   ├── test_orders.py
-│   └── test_validators.py
+│   ├── test_scenarios.py
+│   └── test_units.py
+|   |__ run_tests.py
+|── patterns/
+|    |──repository.py
 ├── docs/
 │   ├── requirements.txt
 │   ├── README.md
-│   └── database_schema.sql
 ├── .gitignore
 └── requirements.txt
 ```
