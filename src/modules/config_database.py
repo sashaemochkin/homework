@@ -1,8 +1,9 @@
 def init_database():
     """Инициализация базы данных и создание таблиц"""
     conn = get_db_connection()
+    cur = conn.cursor()
+
     try:
-        cur = conn.cursor()
         
         # Создание таблицы clients
         cur.execute("""
@@ -49,6 +50,7 @@ def init_database():
         conn.rollback()
         print(f"Ошибка при инициализации базы данных: {e}")
         raise
+        
     finally:
         cur.close()
         conn.close()
