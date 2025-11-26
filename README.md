@@ -442,8 +442,6 @@ def validate_password(password: str) -> Tuple[bool, List[str]]:
 
 1. **models/client.py**
    - `declarative_base()` - подключение к базе данных
-   - `` - инициализация базы данных и создание таблиц
-   - `` - закрытие соединения
 
 2. **services/client_service.py**
    - `ClientService` - основной класс для управления клиентами
@@ -978,7 +976,7 @@ class OrderValidator:
 
 **Основные модули и функции:**
 1. **/models/orders.py**
-   - declarative_base() - подключение к базе данных
+   - `declarative_base()` - подключение к базе данных
 
 2. **/service/orders_service.py**
    - `OrderService()` - основной класс для управления заказами клиента
