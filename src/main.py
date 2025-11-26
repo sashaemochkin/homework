@@ -1,8 +1,10 @@
 import sys
-from modules.client_management import ClientManager
-from utils.validators import validate_date, validate_email, validate_phone
 from datetime import datetime
+from utils.validators import validate_date, validate_email, validate_phone
+from modules.client_management import ClientManager
 from modules.interface import main_menu, add_client_interface, search_clients_interface
+from modules.config_database import init_database
+from config.database import get_db_connection
 
 def main():
     """Основная функция программы"""

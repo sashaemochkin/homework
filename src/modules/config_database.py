@@ -1,3 +1,5 @@
+from config.database import get_db_connection
+
 def init_database():
     """Инициализация базы данных и создание таблиц"""
     conn = get_db_connection()
